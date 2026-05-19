@@ -283,12 +283,17 @@ const buildQuery = (queryParams) => {
  */
  const getDashboardData = async (req, res) => {
   try {
+
+    console.log("hello dahs");
+    
     const query = buildQuery(req.query);
 
     const insights = await Insight.find(query)
       .sort({ published: -1 })
       .lean();
 
+      console.log("bye bye");
+      
     return res.status(200).json({
       success: true,
       count: insights.length,
