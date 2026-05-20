@@ -1,4 +1,4 @@
-// utils/userInterceptor.ts
+
 import axios from "axios";
 import { baseURL } from "./config";
 

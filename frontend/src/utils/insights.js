@@ -36,13 +36,6 @@ export async function fetchInsights(filters = {}) {
 
   const data = await response.json();
 
-  // Backend returns:
-  // {
-  //   success: true,
-  //   count: 100,
-  //   insights: [...]
-  // }
-
   return data.insights;
 }
 
@@ -55,12 +48,7 @@ export async function fetchFilterOptions() {
 
   const data = await response.json();
 
-  // Backend returns:
-  // {
-  //   success: true,
-  //   filters: { ... }
-  // }
-
+  
   return data.filters;
 }
 

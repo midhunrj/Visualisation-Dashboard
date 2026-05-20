@@ -1,6 +1,6 @@
 const express=require('express')
 const {
- // importData,
+
   getDashboardData,
   getFilterOptions,
   getStats,
@@ -8,8 +8,6 @@ const {
 
 const dataRouter = express.Router();
 
-
-// dataRouter.post('/import', importData);
 
 dataRouter.get('/', getDashboardData);
 

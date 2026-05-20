@@ -4,8 +4,6 @@ const path=require('path')
 const { fileURLToPath } =require('url');
 const Insight =require('../models/dataModel')
 
-// const __filename = fileURLToPath(import.meta.url);
-// const __dirname = path.dirname(__filename);
 
 const InitialiseDashboardData = async () => {
   try {
